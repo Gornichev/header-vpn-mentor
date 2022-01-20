@@ -1,6 +1,7 @@
 @import "../icon/style.css";
 @import "../fonts/onlinefontconverter.com/converted-files/font.css";
 #btn-show-menu {
+  font-size: 20px;
   line-height: 1.2;
   -webkit-transition: all 0.12s linear;
   -moz-transition: all 0.12s linear;
@@ -90,16 +91,13 @@
   -o-transition: all 0.12s linear;
   transition: all 0.12s linear;
 }
-
 .burger li a:hover {
   color: #249ac2;
 }
-
-#menu .burger .btn {
+.burger .btn {
   padding: 0;
 }
-
-#menu .burger .btn .icon {
+.burger .btn .icon {
   margin-right: 7px;
   margin-top: 0;
 }
@@ -110,7 +108,16 @@
   box-sizing: border-box;
 }
 
+span {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
 body {
+  font-family: "HelveticaRegular", sans-serif;
   background-color: #E5E5E5;
   font-size: 16px;
   font-weight: normal;
