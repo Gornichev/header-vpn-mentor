@@ -17,7 +17,3 @@ hideMenu.onclick = function() {
     menu.classList.remove("show");
 }
 
-// btn-language
-function myFunction() {
-    document.getElementById("nav-sub-menu").classList.toggle("show");
-}
