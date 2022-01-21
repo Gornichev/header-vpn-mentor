@@ -129,7 +129,6 @@
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 .header .header-inner {
-  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,6 +141,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.header .header-inner .icon-down-stroke {
+  font-size: 9px;
+  margin-left: 5px;
+}
 .header .nav-menu .menu-list {
   display: flex;
   align-items: center;
@@ -151,16 +154,34 @@
 }
 .header .nav-menu .menu-list .icon {
   display: inline-block;
+  font-size: 10px;
 }
 .header .nav-menu .menu-list .menu-item {
   padding: 15px;
   position: relative;
   min-width: 146px;
-  max-height: 50px;
+  max-height: 60px;
   text-align: center;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.header .nav-menu .menu-list .menu-item:after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #ccd3d3;
+  height: 36px;
+  top: 50%;
+  margin-top: 0;
+  transform: translate(-50%, -50%);
+  right: 0;
+}
+.header .nav-menu .menu-list .menu-item .icon {
+  margin: 0 5px;
+  color: #0f5499;
+  font-size: 14px;
+}
+.header .nav-menu .menu-list .menu-item .icon-down-stroke {
+  font-size: 10px;
 }
 .header .nav-menu .menu-list .menu-item:hover {
   background: #e7e7e7;
@@ -179,6 +200,9 @@
 .header .nav-menu .menu-list .menu-item:hover .icon-down-stroke {
   transform: rotateX(-180deg);
   -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header .nav-menu .menu-list .nav-sub-menu-language {
   position: absolute;
@@ -187,7 +211,7 @@
   background: #fff;
   right: 0;
   left: 0;
-  top: 49px;
+  top: 50px;
   bottom: auto;
   visibility: hidden;
   opacity: 0;
@@ -241,6 +265,9 @@ body {
 @media screen and (max-width: 1199.98px) {
   .header .header-inner .btn-burger {
     display: block;
+  }
+  .header .header-inner .btn-header {
+    display: none;
   }
   .header .header-inner .wrapper-menu {
     display: none;
