@@ -49,6 +49,7 @@
   -moz-transition: all 0.12s linear;
   -o-transition: all 0.12s linear;
   transition: all 0.12s linear;
+  display: none;
 }
 #menu.show {
   transform: translateX(0);
@@ -129,38 +130,58 @@
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 .header .header-inner {
-  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .header-inner .nav-menu .menu-list {
+.header .header-inner .btn-burger {
+  display: none;
+}
+.header .wrapper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+.header .nav-menu .menu-list {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header .header-inner .nav-menu .menu-list .icon {
+.header .nav-menu .menu-list .icon {
   display: inline-block;
+  font-size: 10px;
 }
-.header .header-inner .nav-menu .menu-list .menu-item {
-  padding: 15px;
+.header .nav-menu .menu-list .menu-item {
+  padding: 18px 10px;
   position: relative;
+  min-height: 60px;
+  min-width: 146px;
+  text-align: center;
 }
-.header .header-inner .nav-menu .menu-list .menu-item:hover .nav-sub-menu-language {
+.header .nav-menu .menu-list .menu-item:hover {
+  background: #e7e7e7;
+}
+.header .nav-menu .menu-list .menu-item:hover .nav-sub-menu-language {
   visibility: visible;
   opacity: 1;
   transform: translateY(1px);
 }
-.header .header-inner .nav-menu .menu-list .menu-item:hover .icon-down-stroke {
+.header .nav-menu .menu-list .menu-item:hover .icon-down-stroke {
   transform: rotateX(-180deg);
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.header .header-inner .nav-menu .menu-list .nav-sub-menu-language {
+.header .nav-menu .menu-list .nav-sub-menu-language {
   position: absolute;
   z-index: 102;
   width: 100%;
@@ -177,13 +198,22 @@
   transition: all 0.3s linear;
   transform: translateY(10px);
 }
-.header .header-inner .nav-menu .menu-list .nav-sub-menu-language .nav-sub-menu-language-list {
+.header .nav-menu .menu-list .nav-sub-menu-language .nav-sub-menu-language-list {
   margin: 0;
   list-style: none;
   padding: 10px 20px;
   width: max-content;
 }
 
+@media screen and (min-width: 1199.98px) {
+  .wrapper-menu {
+    display: none;
+  }
+
+  .btn-burger {
+    display: block;
+  }
+}
 *,
 *::before,
 *::after {
