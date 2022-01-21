@@ -19,6 +19,9 @@
 				padding: 0
 				list-style: none
 
+				.icon
+					display: inline-block
+
 				.menu-item
 					padding: 15px
 					position: relative
@@ -28,6 +31,14 @@
 							visibility: visible
 							opacity: 1
 							transform: translateY(1px)
+
+						.icon-down-stroke
+							transform: rotateX(-180deg)
+							-webkit-transition: all 0.3s linear
+							-moz-transition: all 0.3s linear
+							-o-transition: all 0.3s linear
+							transition: all 0.3s linear
+
 
 				.nav-sub-menu-language
 					position: absolute
