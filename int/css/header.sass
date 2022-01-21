@@ -1,0 +1,58 @@
+@import "variables"
+
+.header
+	border-top: 3px solid $primaryColor
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,.5)
+
+	.header-inner
+		padding-top: 10px
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		.nav-menu
+
+			.menu-list
+				display: flex
+				align-items: center
+				margin: 0
+				padding: 0
+				list-style: none
+
+				.menu-item
+					padding: 15px
+					position: relative
+
+					&:hover
+						.nav-sub-menu-language
+							visibility: visible
+							opacity: 1
+							transform: translateY(1px)
+
+				.nav-sub-menu-language
+					position: absolute
+					z-index: 102
+					width: 100%
+					background: $mainColor
+					right: 0
+					left: 0
+					top: 49px
+					bottom: auto
+					visibility: hidden
+					opacity: 0
+					-webkit-transition: all 0.3s linear
+					-moz-transition: all 0.3s linear
+					-o-transition: all 0.3s linear
+					transition: all 0.3s linear
+					transform: translateY(10px)
+
+					.nav-sub-menu-language-list
+						margin: 0
+						list-style: none
+						padding: 10px 20px
+						width: max-content
+
+
+
+
+
