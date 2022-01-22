@@ -21,12 +21,12 @@ hideMenu.onclick = function() {
 
 
 
-function myFunction() {
+function dropdownFunction() {
     document.getElementById("dropdown-btn-language").classList.toggle("show");
 }
 
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.drop-btn')) {
 
         const dropdowns = document.getElementsByClassName("dropdown-content-language");
         let i;
