@@ -272,7 +272,6 @@
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  overflow: auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   list-style: none;
@@ -283,7 +282,6 @@
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  border-top: 1px solid rgba(143, 163, 179, 0.6);
   display: block;
 }
 .dropdown-content-language .nav-sub-menu-language-btn .img {
@@ -292,6 +290,14 @@
 
 .show {
   visibility: visible;
+}
+
+.nav-sub-menu-list {
+  columns: 3;
+  padding: 0;
+  margin: 5px 0 0 -200px;
+  list-style: none;
+  background: #fff;
 }
 
 *,
