@@ -256,6 +256,18 @@
   margin-right: 5px;
 }
 
+.btn-header {
+  padding: 8px 15px;
+  background: #0f5499;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .dropdown-menu {
   position: relative;
   display: inline-block;
