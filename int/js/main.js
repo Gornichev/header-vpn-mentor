@@ -22,13 +22,13 @@ hideMenu.onclick = function() {
 
 
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("dropdown-btn-language").classList.toggle("show");
 }
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
 
-        const dropdowns = document.getElementsByClassName("dropdown-content");
+        const dropdowns = document.getElementsByClassName("dropdown-content-language");
         let i;
         for (i = 0; i < dropdowns.length; i++) {
             const openDropdown = dropdowns[i];
