@@ -38,3 +38,7 @@ window.onclick = function(event) {
         }
     }
 }
+
+icon.onclick = function(){
+    this.classList.toggle('rotate')
+}

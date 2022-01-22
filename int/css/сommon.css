@@ -165,6 +165,9 @@
   font-size: 15px;
   line-height: 1.5;
 }
+.header .nav-menu .menu-list .menu-item:hover a {
+  color: #397ab7;
+}
 .header .nav-menu .menu-list .menu-item:after {
   content: "";
   position: absolute;
@@ -226,6 +229,14 @@
   list-style: none;
   padding: 10px 20px;
   width: max-content;
+  white-space: nowrap;
+}
+.header .nav-menu .menu-list .nav-sub-menu-language-list .nav-sub-menu-language-item {
+  display: flex;
+  align-items: center;
+}
+.header .nav-menu .menu-list .nav-sub-menu-language-list .nav-sub-menu-language-item img {
+  width: 30px;
 }
 
 *,
