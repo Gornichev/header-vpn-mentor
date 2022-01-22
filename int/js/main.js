@@ -22,7 +22,8 @@ hideMenu.onclick = function() {
 
 
 function dropdownFunction() {
-    document.getElementById("dropdown-btn-language").classList.toggle("show");
+    document.getElementById("dropdown-btn-language").classList.toggle("show")
+    document.getElementById("icon").classList.toggle("rotate");
 }
 
 window.onclick = function(event) {
@@ -39,6 +40,4 @@ window.onclick = function(event) {
     }
 }
 
-icon.onclick = function(){
-    this.classList.toggle('rotate')
-}
+

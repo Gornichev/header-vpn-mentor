@@ -264,8 +264,8 @@
   transition: transform 1s ease;
   display: inline-block;
 }
-.dropdown-menu .icon .rotate {
-  transform: rotateX(180deg);
+.dropdown-menu .rotate {
+  transform: rotate(180deg);
 }
 .dropdown-menu a:hover {
   background-color: #e7e7e7;
