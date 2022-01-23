@@ -81,7 +81,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .burger li .burger-menu-link {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: normal;
   color: #397ab7;
   margin-right: 10px;
@@ -358,7 +358,7 @@ input {
   flex: 1;
 }
 
-.tabs {
+.burger-tabs {
   overflow: hidden;
 }
 
@@ -381,12 +381,13 @@ input {
   text-align: center;
   transition: all 0.35s;
   transform: rotate(90deg);
+  color: #397ab7;
 }
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: black;
-  background: white;
+  color: #000;
+  background: #fff;
   transition: all 0.35s;
 }
 .tab-close {
@@ -394,7 +395,6 @@ input {
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
-  background: black;
   cursor: pointer;
 }
 
@@ -409,20 +409,22 @@ input:checked ~ .tab-content {
 .nav-sub-menu-language-list {
   padding: 0;
   margin: 0;
+  border: none !important;
 }
 .nav-sub-menu-language-list li {
-  padding: 0;
+  border: none;
 }
 .nav-sub-menu-language-list img {
   height: 30px;
+  margin-right: 10px;
 }
 .nav-sub-menu-language-list .burger-sub-menu-language-item {
+  color: #397ab7;
   display: flex;
   align-items: center;
   padding: 12px 10px;
   border-top: 1px solid #e7e7e7;
   font-size: 14px;
-  color: #262833;
   line-height: 1;
 }
 
@@ -471,9 +473,9 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 400.98px) {
+@media screen and (max-width: 450.98px) {
   #menu {
-    width: 200px;
+    width: 100%;
   }
 }
 

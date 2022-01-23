@@ -11,7 +11,7 @@ input
 	.col
 		flex: 1
 
-.tabs
+.burger-tabs
 	overflow: hidden
 
 .tab
@@ -33,12 +33,13 @@ input
 			text-align: center
 			transition: all .35s
 			transform: rotate(90deg)
+			color: $primaryColor
 
 	&-content
 		max-height: 0
 		padding: 0 1em
-		color: black
-		background: white
+		color: $mainDarkColor
+		background: $mainColor
 		transition: all .35s
 
 	&-close
@@ -46,7 +47,6 @@ input
 		justify-content: flex-end
 		padding: 1em
 		font-size: 0.75em
-		background: black
 		cursor: pointer
 
 input:checked
@@ -63,21 +63,22 @@ input:checked
 .nav-sub-menu-language-list
 	padding: 0
 	margin: 0
+	border: none!important
 
 	li
-		padding: 0
+		border: none
 
 	img
 		height: 30px
-
+		margin-right: 10px
 
 	.burger-sub-menu-language-item
+		color: $primaryColor
 		display: flex
 		align-items: center
 		padding: 12px 10px
 		border-top: 1px solid $OpacityColor
 		font-size: 14px
-		color: #262833
 		line-height: 1
 
 
