@@ -19,9 +19,9 @@
 
 #menu
 	border-top: 1px solid black
-	padding: 22px 5px
+	padding: 0 5px 22px
 	width: 450px
-
+	overflow-y: scroll
 	background-color: $mainColor
 	transform: translatex(450px)
 	position: fixed
@@ -33,11 +33,9 @@
 	-moz-transition: all .12s linear
 	-o-transition: all .12s linear
 	transition: all .12s linear
-	overflow-y: scroll
 
 	&.show
 		transform: translateX(0)
-
 
 	#btn-hide-menu
 		width: 44px
@@ -45,7 +43,7 @@
 		line-height: 1
 		text-align: center
 		position: absolute
-		top: 30px
+		top: 10px
 		left: 383px
 		font-size: 14px
 		cursor: pointer
