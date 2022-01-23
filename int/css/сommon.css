@@ -22,7 +22,7 @@
 }
 
 #menu {
-  padding: 0 5px 22px;
+  padding: 0 5px 22px 0;
   width: 450px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -76,7 +76,8 @@
 }
 .burger .burger-wrapper {
   padding: 3px 10px;
-  border-top: 3px solid #0f5499;
+  border-top: 3px solid #397ab7;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 .burger li {
   border: 1px solid rgba(0, 0, 0, 0.2);
