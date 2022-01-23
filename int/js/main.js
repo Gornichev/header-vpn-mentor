@@ -41,3 +41,23 @@ window.onclick = function(event) {
 }
 
 
+function dropdownBurgerFunction() {
+    document.getElementById("dropdown-burger-language").classList.toggle("shows")
+    document.getElementById("icon-burger").classList.toggle("rotate");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.drop-burger')) {
+
+        const dropdowns = document.getElementsByClassName("dropdown-burger-language");
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('shows')) {
+                openDropdown.classList.remove('shows');
+            }
+        }
+    }
+}
+
+// accordion

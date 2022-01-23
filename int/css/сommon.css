@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../icon/style.css";
 @import "button.css";
 @import "../fonts/onlinefontconverter.com/converted-files/font.css";
@@ -124,6 +125,49 @@
   margin-top: 0;
 }
 
+.burger-sub-menu-language {
+  visibility: hidden;
+  display: none;
+}
+.burger-sub-menu-language:hover {
+  visibility: visible;
+  display: block;
+}
+
+.dropdown-burger-language {
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-burger-language .img {
+  width: 30px;
+}
+
+.shows {
+  visibility: visible;
+}
+
+.burger-sub-menu-list {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  z-index: 102;
+  width: 100%;
+  background: #fff;
+  right: 0;
+  left: 0;
+  top: 50px;
+  bottom: auto;
+}
+.burger-sub-menu-list .burger-sub-menu-language-item {
+  display: flex;
+}
+
 .header {
   border-top: 3px solid #397ab7;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
@@ -188,7 +232,7 @@
 .header .nav-menu .menu-item .icon {
   margin: 0 5px;
   color: #0f5499;
-  font-size: 14px;
+  font-size: 13px;
 }
 .header .nav-menu .menu-item .icon-down-stroke {
   font-size: 10px;
@@ -287,8 +331,6 @@
   visibility: hidden;
   position: absolute;
   background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   list-style: none;
   padding: 0;
@@ -311,9 +353,103 @@
 .nav-sub-menu-list {
   columns: 3;
   padding: 0;
-  margin: 5px 0 0 -200px;
+  margin: 6px 0 0 -200px;
   list-style: none;
   background: #fff;
+}
+
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+  padding: 0 1em 1em;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+}
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #1a252f;
+}
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input:checked + .tab-label {
+  background: #1a252f;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
 }
 
 *,
