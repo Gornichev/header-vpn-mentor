@@ -21,7 +21,7 @@
 	border-top: 1px solid black
 	padding: 22px 5px
 	width: 450px
-	overflow: scroll
+
 	background-color: $mainColor
 	transform: translatex(450px)
 	position: fixed
@@ -33,10 +33,11 @@
 	-moz-transition: all .12s linear
 	-o-transition: all .12s linear
 	transition: all .12s linear
-
+	overflow-y: scroll
 
 	&.show
 		transform: translateX(0)
+
 
 	#btn-hide-menu
 		width: 44px
