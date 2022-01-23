@@ -13,7 +13,6 @@ input
 
 .tabs
 	overflow: hidden
-	box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5)
 
 .tab
 	width: 100%
@@ -26,13 +25,14 @@ input
 		padding: 22px 26px
 
 		&::after
-			content: "\e905"
-			font-size: 10px
+			content: "\276F"
+			font-size: 20px
+			margin-left: 10px
 			width: 1em
 			height: 1em
 			text-align: center
 			transition: all .35s
-
+			transform: rotate(90deg)
 
 	&-content
 		max-height: 0
@@ -53,9 +53,34 @@ input:checked
 	+ .tab-label
 
 		&::after
-			transform: rotate(180deg)
+			transform: rotate(270deg)
 
 	~ .tab-content
 		max-height: 100vh
-		padding: 1em
+		padding: 0
+
+
+.nav-sub-menu-language-list
+	padding: 0
+	margin: 0
+
+	li
+		padding: 0
+
+	img
+		height: 30px
+
+
+	.burger-sub-menu-language-item
+		display: flex
+		align-items: center
+		padding: 12px 10px
+		border-top: 1px solid $OpacityColor
+		font-size: 14px
+		color: #262833
+		line-height: 1
+
+
+
+
 

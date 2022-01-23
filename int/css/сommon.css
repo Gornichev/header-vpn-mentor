@@ -1,9 +1,16 @@
+@charset "UTF-8";
 @import "../icon/style.css";
 @import "button.css";
 @import "../fonts/onlinefontconverter.com/converted-files/font.css";
+.btn-burger {
+  border: none;
+  background: none;
+}
+
 #btn-show-menu {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.2;
+  color: #0f5499;
   -webkit-transition: all 0.12s linear;
   -moz-transition: all 0.12s linear;
   -o-transition: all 0.12s linear;
@@ -67,7 +74,7 @@
 .burger .burger-menu-item {
   padding: 22px 26px;
 }
-.burger li:first-child {
+.burger .burger-wrapper {
   padding: 3px 10px;
 }
 .burger li {
@@ -155,6 +162,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 3px;
 }
 .header .header-inner .btn-burger {
   display: none;
@@ -352,7 +360,6 @@ input {
 
 .tabs {
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
 .tab {
@@ -366,12 +373,14 @@ input {
   padding: 22px 26px;
 }
 .tab-label::after {
-  content: "\e905";
-  font-size: 10px;
+  content: "❯";
+  font-size: 20px;
+  margin-left: 10px;
   width: 1em;
   height: 1em;
   text-align: center;
   transition: all 0.35s;
+  transform: rotate(90deg);
 }
 .tab-content {
   max-height: 0;
@@ -390,11 +399,31 @@ input {
 }
 
 input:checked + .tab-label::after {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 input:checked ~ .tab-content {
   max-height: 100vh;
-  padding: 1em;
+  padding: 0;
+}
+
+.nav-sub-menu-language-list {
+  padding: 0;
+  margin: 0;
+}
+.nav-sub-menu-language-list li {
+  padding: 0;
+}
+.nav-sub-menu-language-list img {
+  height: 30px;
+}
+.nav-sub-menu-language-list .burger-sub-menu-language-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  border-top: 1px solid #e7e7e7;
+  font-size: 14px;
+  color: #262833;
+  line-height: 1;
 }
 
 *,
@@ -440,6 +469,11 @@ body {
   }
   .header .header-inner .wrapper-menu {
     display: none;
+  }
+}
+@media screen and (max-width: 400.98px) {
+  #menu {
+    width: 200px;
   }
 }
 
