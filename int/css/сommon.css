@@ -393,7 +393,7 @@ input {
 .tab-close {
   display: flex;
   justify-content: flex-end;
-  padding: 1em;
+  padding: 16px;
   font-size: 0.75em;
   cursor: pointer;
 }
@@ -410,6 +410,9 @@ input:checked ~ .tab-content {
   padding: 0;
   margin: 0;
   border: none !important;
+}
+.nav-sub-menu-language-list .nav-sub-menu-language-btn {
+  padding: 10px;
 }
 .nav-sub-menu-language-list li {
   border: none;
@@ -475,7 +478,10 @@ body {
 }
 @media screen and (max-width: 450.98px) {
   #menu {
-    width: 100%;
+    width: 340px;
+  }
+  #menu #btn-hide-menu {
+    left: 270px;
   }
 }
 
