@@ -25,6 +25,7 @@
   padding: 0 5px 22px 0;
   width: 450px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   background-color: #fff;
   transform: translatex(450px);
