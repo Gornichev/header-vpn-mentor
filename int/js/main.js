@@ -16,9 +16,6 @@ hideMenu.onclick = function() {
 }
 
 
-
-
-
 function dropdownFunction() {
     document.getElementById("dropdown-btn-language").classList.toggle("show")
     document.getElementById("icon").classList.toggle("rotate");
@@ -59,4 +56,3 @@ window.onclick = function(event) {
 }
 
 // accordion
-
